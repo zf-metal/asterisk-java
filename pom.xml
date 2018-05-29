@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.asteriskjava</groupId>
+	<groupId>ar.com.sondeos</groupId>
 	<artifactId>asterisk-java</artifactId>
 	<name>Asterisk-Java</name>
-	<version>2.0.3-SNAPSHOT</version>
+	<version>2.0.4-snd</version>
 	<description>The free Java library for Asterisk PBX integration.</description>
 	<inceptionYear>2004</inceptionYear>
 
@@ -15,7 +15,7 @@
 		</license>
 	</licenses>
 
-	<url>https://github.com/asterisk-java/asterisk-java</url>
+	<url>https://github.com/zf-metal/asterisk-java</url>
 
 	<developers>
 		<developer>
@@ -65,9 +65,9 @@
 		</developer>
 	</developers>
 	<scm>
-		<connection>scm:git:git@github.com:asterisk-java/asterisk-java.git</connection>
-		<developerConnection>scm:git:git@github.com:asterisk-java/asterisk-java.git</developerConnection>
-		<url>https://github.com/asterisk-java/asterisk-java</url>
+		<connection>scm:git:git@github.com:zf-metal/asterisk-java.git</connection>
+		<developerConnection>scm:git:git@github.com:zf-metal/asterisk-java.git</developerConnection>
+		<url>https://github.com/zf-metal/asterisk-java</url>
 	</scm>
 	<distributionManagement>
 		<snapshotRepository>
@@ -81,22 +81,9 @@
 	</distributionManagement>
 	<issueManagement>
 		<system>GitHub</system>
-		<url>https://github.com/asterisk-java/asterisk-java/issues</url>
+		<url>https://github.com/zf-metal/asterisk-java/issues</url>
 	</issueManagement>
-	<mailingLists>
-		<mailingList>
-			<name>Asterisk-Java User List</name>
-			<subscribe>http://lists.sourceforge.net/mailman/listinfo/asterisk-java-users</subscribe>
-			<unsubscribe>http://lists.sourceforge.net/mailman/listinfo/asterisk-java-users</unsubscribe>
-			<archive>http://sourceforge.net/mailarchive/forum.php?forum=asterisk-java-users</archive>
-		</mailingList>
-		<mailingList>
-			<name>Asterisk-Java Developer List</name>
-			<subscribe>http://lists.sourceforge.net/mailman/listinfo/asterisk-java-devel</subscribe>
-			<unsubscribe>http://lists.sourceforge.net/mailman/listinfo/asterisk-java-devel</unsubscribe>
-			<archive>http://sourceforge.net/mailarchive/forum.php?forum=asterisk-java-devel</archive>
-		</mailingList>
-	</mailingLists>
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>

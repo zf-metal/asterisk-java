@@ -1323,6 +1323,11 @@ public class AsteriskServerImpl implements AsteriskServer, ManagerEventListener
 
                 dialedChannel = otherChannel.getDialedChannel();
 
+				if (otherChannel.wasInState(ChannelState.UP))
+            	{
+                	cb.onSuccess(channel);
+                	return;
+            	}
                 // on busy the other channel is in state busy when we receive
                 // the originate event
                 if (otherChannel.wasBusy())
@@ -1343,6 +1348,14 @@ public class AsteriskServerImpl implements AsteriskServer, ManagerEventListener
                     cb.onBusy(channel);
                     return;
                 }
+				
+				if (dialedChannel != null && dialedChannel.wasInState(ChannelState.UP))
+                {
+                    cb.onSuccess(channel);
+                    return;
+                }
+				
+				
             }
 
             // if nothing else matched we asume no answer
